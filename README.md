@@ -8,4 +8,14 @@ Para executar o programa de forma completa e fluída use o seguinte comando no s
   java -cp 'Coloque aqui sem as "'" o caminho do seu arquivo do mysql-connnector na pasta lib':.  MenuPrincipal
   exemplo: java -cp /home/usuario/pastateste/Projeto_Biblioteca/com.BiblioTech/lib/mysql-connector-j_8.1.0-1ubuntu22.04_all/usr/share/java/mysql-connector-java-8.1.0.jar:. MenuPrincipal
 
+  Query SQL para criar o banco de dados
+  CREATE TABLE livros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    data_implementacao DATE NOT NULL,
+    genero VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    status ENUM('Livre', 'Ocupado') NOT NULL
+);
+
   Com tudo isso feito seu programa irá rodar perfeitamente no terminal :)
